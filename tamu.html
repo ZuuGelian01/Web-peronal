@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buku Tamu</title>
+  <style>
+  .contak a {
+      margin: 0 10px;
+      color: #4e7be7;
+      text-decoration: none;
+      font-weight: bold;
+  }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #d0e7ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4e7be7;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .container {
+      max-width: 700px;
+      background-color: #fff;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
+    input[type="submit"] {
+      background-color: #4e7be7;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3664c6;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      margin-top: 50px;
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Buku Tamu</h1>
+    <p>Silakan tinggalkan pesan dan kesan Anda</p>
+  </header>
+  <nav>
+    <div class="contak">
+      <a href="home.html">Home</a> |
+      <a href="galeri.html">Galeri</a> |
+      <a href="tentang saya.html">Tentang saya</a> |
+      <a href="contak.html">Contact me</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Formulir Buku Tamu</h2>
+    <form>
+      <label for="nama">Nama</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+
+      <label for="pesan">Pesan / Kesan</label>
+      <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan atau kesan Anda..." required></textarea>
+
+      <input type="submit" value="Kirim">
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Rizky Ramdhani - Buku Tamu
+  </footer>
+
+</body>
+</html>
